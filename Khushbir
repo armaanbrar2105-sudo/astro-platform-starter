@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year Khushbir ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(135deg, #ffe6f0, #ffd6e8);
+      text-align: center;
+      color: #c2255c;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 40px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      animation: glow 2s infinite alternate;
+    }
+
+    .sub {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #a61e4d;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      padding: 20px;
+      border-radius: 18px;
+      max-width: 520px;
+      margin: 20px auto;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .emoji {
+      font-size: 2.8rem;
+      margin: 15px 0;
+    }
+
+    .timeline {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      color: #862e9c;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 1.1rem;
+      color: #7a1f3d;
+    }
+
+    /* Animations */
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #fff; }
+      to { text-shadow: 0 0 20px #ff4d6d; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -10px;
+      color: red;
+      font-size: 20px;
+      animation: floatUp 6s linear infinite;
+    }
+
+    @keyframes floatUp {
+      from {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      to {
+        transform: translateY(-100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎆 Happy New Year Khushbir ❤️ 🎆</h1>
+    <div class="sub">My favorite person, always ✨</div>
+
+    <div class="emoji">🧸 🐱 🌸 💖</div>
+
+    <div class="card">
+      <p>
+        Hey my love,<br><br>
+        This New Year feels extra special because I get to step into it with <b>you</b>.
+        You came into my life quietly… and now you mean everything to me.
+        <br><br>
+        You are my comfort, my smile, and my safest place 💫
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="timeline">
+        💌 We talked for the first time on <b>11 September</b><br>
+        💍 I proposed you on <b>11 October</b><br>
+        ♾️ And since then… it’s been <b>us</b>
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        I don’t know what the future holds,<br>
+        but I know one thing for sure —<br>
+        I want every version of my future to have <b>you</b> in it.
+        <br><br>
+        Let’s fight less, laugh more,<br>
+        love deeper, and grow together 🌹
+      </p>
+    </div>
+
+    <div class="emoji">🐾 🌹 💕 ✨</div>
+
+    <footer>
+      Always yours,<br>
+      <strong>Armaan ❤️</strong>
+    </footer>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.innerHTML = "❤️";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 15 + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 450);
+  </script>
+</body>
+</html>
